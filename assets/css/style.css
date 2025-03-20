@@ -1,0 +1,40 @@
+* {
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+#navbar {
+    display: flex;
+}
+header{
+    justify-content: space-between;/*coloca o menu do lado oposto da tela*/
+    flex-direction: row;/*muda a orientaçõa dos elementos dentro da pagina*/
+    border: solid 1px black;
+    align-items: center; /*centraliza dentro do header*/
+    width: 90%;
+}
+li {
+    list-style: none;
+   
+    margin: 5px 20px;
+    padding: 5px 20px;
+}
+.navbar-item{
+    margin: 5px 20px;
+    padding: 5px 20px;
+}
+body{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration :none;
+    color :black
+}
