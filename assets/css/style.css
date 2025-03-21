@@ -16,7 +16,7 @@ header{
     flex-direction: row;/*muda a orientaçõa dos elementos dentro da pagina*/
     border: solid 1px black;
     align-items: center; /*centraliza dentro do header*/
-    width: 90%;
+    width: 100%;
 }
 li {
     list-style: none;
@@ -31,10 +31,62 @@ li {
 body{
     margin: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
+
 }
 a{
     text-decoration :none;
     color :black
+}
+#banner{
+    background-image: url('/assets/images/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border: solid 1px #000;
+    display: flex;
+    align-items: center;
+}
+#banner h1{
+    margin:0%; 
+
+}
+#banner-text{
+    margin-left: 15%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+#banner h1,
+#banner h1 span{
+    font-size: 2.3rem;
+    color: #fff;
+}
+#banner h1 span{
+display: block;
+}
+#banner-text p{
+    color: #fff;
+    font-size: 1rem;
+}
+#banner-text a{
+    background-color: #e58e26;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#banner_2 {
+    display: flex ;
+    width: 100%;
+    justify-content: space-evenly;
+    border: 1px #000;
+    text-align: center;
+}
+#banner2 div{
+    width: 33%;
+}
+#texto{
+    text-align: center;
 }
