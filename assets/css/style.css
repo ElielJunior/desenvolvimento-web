@@ -1,173 +1,353 @@
 * {
-    font-size: 18px;
-    box-sizing: border-box;
+  font-size: 18px;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
+  width: 100%;
 }
 
-header,
-#navbar {
-    display: flex;
+a {
+  text-decoration: none;
+  color: black;
 }
-header{
-    justify-content: space-between;/*coloca o menu do lado oposto da tela*/
-    flex-direction: row;/*muda a orientaçõa dos elementos dentro da pagina*/
-    border: solid 1px black;
-    align-items: center; /*centraliza dentro do header*/
-    width: 100%;
-}
+
 li {
-    list-style: none;
-   
-    margin: 5px 20px;
-    padding: 5px 20px;
+  list-style: none;
+  margin: 5px 20px;
+  padding: 5px 20px;
 }
-.navbar-item{
-    margin: 5px 20px;
-    padding: 5px 20px;
+
+.navbar-item {
+  margin: 5px 20px;
+  padding: 5px 20px;
 }
-body{
-    margin: 0;
-    width: 100%;
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  transition: top 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  border: solid 1px black;
+  padding: 10px 20px;
+}
+
+#navbar {
+  display: flex;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: #333;
+}
+
+#banner {
+  background-image: url('/assets/images/banner2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border: solid 1px #000;
+  display: flex;
+  align-items: center;
+}
+
+#banner h1 {
+  margin: 0;
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+#banner h1 span {
+  display: block;
+  font-size: 2.3rem;
+}
+
+#banner-text {
+  margin-left: 15%;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#banner-text p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.bot {
+  background-color: #e58e26;
+  padding: 10px 50px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.carousel-slide {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#texto {
+  text-align: center;
+}
+
+#texto p {
+  color: #777;
+}
+
+#banner_3 div {
+  text-align: left;
+}
+
+.banner-meio-1 {
+    
+  text-align: center;
+}
+.banner-meio-1 img{
+    width: 50%;
+    
+}
+.banner-meio-2 {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.banner-meio-2 div {
+  padding-top: 30px;
+  width: 33%;
+}
+
+#texto-secao-meio {
+  text-align: left;
+  font-size: 2em;
+}
+
+#texto-secao-meio-2 {
+  text-align: right;
+  font-size: 2em;
+}
+
+#container-final {
+  margin: 20px;
+  max-width: ;width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#container-final div {
+  max width: 30%;
+}
+
+.container-final-div h1 {
+  display: inline-block;
 
 }
-a{
-    text-decoration :none;
-    color :black
+
+.container-final-div p{
+    width: 80%;
 }
-#banner{
-    background-image: url('/assets/images/banner2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
-    border: solid 1px #000;
+
+#secao-doutores {
+  background-color: #74b9ff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+#div-fotos-secao-doutores {
+  display: flex;
+   width: 100%;
+  justify-content: space-evenly;
+}
+
+#div-fotos-secao-doutores div {
+  background-color: #fff;
+}
+
+#rodape-final {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 30px;
+}
+
+#rodape-final div {
+  width: 20%;
+}
+
+.titulo-div-footer {
+  border-bottom: solid 3px #0abde3;
+  font-weight: bold;
+}
+
+#lista-final {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.pdados {
+  color: #fff;
+  background-color: #22a6b3;
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Responsivo para telas menores */
+@media screen and (max-width: 680px) {
+  .carousel-slide {
+    flex: 0 0 90%;
+
+  }
+.banner-meio-2 {
     display: flex;
+    max-width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
 }
-#banner h1{
-    margin:0%; 
-
-}
-#banner-text{
-    margin-left: 15%;
-    width: 20%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 10px;
-}
-#banner h1,
-#banner h1 span{
-    font-size: 2.3rem;
-    color: #fff;
-}
-#banner h1 span{
-display: block;
-}
-#banner-text p{
-    color: #fff;
-    font-size: 1rem;
-}
-.bot{
-    background-color: #e58e26;
-    padding: 10px 50px;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: bold;
-}
-#banner_2 {
-    display: flex ;
-    width: 100%;
-    justify-content: space-evenly;
-    border: 1px #000;
-    text-align: center;
-}
-#banner2 div{
-    width: 33%;
-}
-#texto{
-    text-align: center;
-}
-#texto p{
-    color: #777;
-}
-#banner_3 div {
-    text-align: left;
-
-}
 .banner-meio-1 {
-    text-align: center;
-}
-.banner-meio-2{
-    display: flex;
-    width: 100%;
+    display: flex
+;
+    max-width: 100%;
     justify-content: space-evenly;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
-.banner-meio-2 div{
-    padding-top: 30px;
-    width: 33%;
-}
-#texto-secao-meio {
-    text-align: left;
-    font-size: 2em;
-}
-#texto-secao-meio-2{
-    text-align: right;
-    font-size: 2em;
-}
-#container-final{
+.banner-meio-1 img {
+    width: 50%;
+    align-items: center;
     margin-top: 20px;
-    width: 100%;
 }
-#container-final div{
-    width: 30%;
+#rodape-final {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 30px;
 }
-#container-final {
-    display: flex;
-    justify-content: space-evenly;
+.banner-meio-2 div {
+    padding-top: 30px;
+    width: 90%;
 }
-.container-final-div h1 {
-    display: inline-block;
+    #rodape-final {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        margin-top: 30px;
+    }
 }
-#div-fotos-secao-doutores{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+#rodape-final div {
+  width: 100%;
+  align-items: center;
+}
+  .carousel-buttons button {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+/* Media query para tablets */
+@media screen and (max-width: 960px) {
+  .carousel-slide {
+    flex: 0 0 80%;
+  }
 }
 
-#secao-doutores{
-    background-color: #74b9ff;
-    text-align: center;
-    margin: 0% auto;
-    padding: 10px 0px;
+.carousel-buttons {
+  margin: 20px 0;
+  text-align: center;
 }
-#div-fotos-secao-doutores div{
-    background-color: #fff;
+
+.carousel-buttons button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
 }
-#rodape-final div{
-    width: 20%;
+
+#banner_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
-#rodape-final{
-    display:flex;
-    justify-content: center;
-    gap: 70px;
-    margin-top: 30px;
+
+#banner_2 div img {
+  width: 98%;
+  border-radius: 10px;
 }
-.titulo-div-footer{
-    border-bottom: solid 3px #0abde3;
-    font-weight: bold;
+
+.card {
+  flex: 0 0 580px;
+  scroll-snap-align: start;
 }
-#lista-final{
-    margin-top: 30px;
-    font-weight: bold;
+
+#banner_3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
-.pdados{
-    color: #fff;
-    background-color: #22a6b3;
-    width: 300px;
-    text-align: center;
-    padding: 5px;
-}
+
