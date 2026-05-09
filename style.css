@@ -1,0 +1,322 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    color:#222;
+}
+
+/* HERO */
+
+.hero{
+    background:#1d2430;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 8%;
+    overflow:hidden;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.small{
+    color:#bdbdbd;
+    margin-bottom:10px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.hero h1 span{
+    color:#ff9800;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    background:#ff9800;
+    margin:20px 0;
+}
+
+.hero h2{
+    font-size:35px;
+    line-height:1.4;
+    margin-bottom:20px;
+}
+
+.hero h2 span{
+    color:#ff9800;
+}
+
+.hero button{
+    background:#ff9800;
+    color:#fff;
+    border:none;
+    padding:12px 30px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.social{
+    display:flex;
+    gap:20px;
+}
+
+.social img{
+    width:30px;
+    cursor:pointer;
+}
+
+.hero-img{
+    width:35%;
+}
+
+.hero-img img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* ABOUT */
+
+.about{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    padding:70px 8%;
+    background:#fff;
+}
+
+.about-img{
+    width:40%;
+}
+
+.about-img img{
+    width:100%;
+    border-radius:10px;
+}
+
+.about-text{
+    width:60%;
+}
+
+.about-text h2{
+    font-size:35px;
+    margin:15px 0;
+}
+
+.about-text h2 span{
+    color:#ff9800;
+}
+
+.about-text p{
+    margin-bottom:15px;
+    line-height:1.7;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    gap:25px;
+    padding:70px 8%;
+}
+
+.card{
+    background:#1d2430;
+    color:#fff;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+    flex:1;
+}
+
+.card h3{
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+/* BANNER */
+
+.banner{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    padding:70px 8%;
+    background:#fff;
+}
+
+.banner-text{
+    width:40%;
+}
+
+.banner-text h2{
+    font-size:35px;
+    margin:15px 0;
+}
+
+.banner-text span{
+    color:#ff9800;
+}
+
+.banner-img{
+    width:60%;
+}
+
+.banner-img img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* NUMEROS */
+
+.numbers{
+    padding:40px 8%;
+}
+
+.number-box{
+    background:#2d3546;
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    color:#fff;
+}
+
+.number-box h2{
+    color:#ff9800;
+    font-size:40px;
+}
+
+/* TECNOLOGIAS */
+
+.techs{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    padding:60px 8%;
+    background:#fff;
+}
+
+.tech{
+    background:#1d2430;
+    color:#fff;
+    padding:30px 40px;
+    border-radius:10px;
+    text-align:center;
+    width:180px;
+}
+
+.tech i{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.html{
+    color:#e34c26;
+}
+
+.css{
+    color:#264de4;
+}
+
+.js{
+    color:#f0db4f;
+}
+
+/* GALERIA */
+
+.gallery-title{
+    padding:70px 8% 30px;
+}
+
+.gallery-title h2{
+    font-size:35px;
+    margin-top:10px;
+}
+
+.gallery-title span{
+    color:#ff9800;
+}
+
+.gallery{
+    display:flex;
+    gap:20px;
+    padding:0 8% 70px;
+}
+
+.gallery img{
+    width:50%;
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1d2430;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    padding:50px 8%;
+}
+
+footer h3{
+    color:#ff9800;
+    margin-bottom:20px;
+}
+
+footer p{
+    margin-bottom:10px;
+}
+
+.copy{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .hero,
+    .about,
+    .cards,
+    .banner,
+    .gallery,
+    footer,
+    .techs{
+        flex-direction:column;
+    }
+
+    .hero-text,
+    .hero-img,
+    .about-img,
+    .about-text,
+    .banner-text,
+    .banner-img{
+        width:100%;
+    }
+
+    .gallery img{
+        width:100%;
+    }
+
+    .number-box{
+        flex-direction:column;
+        gap:30px;
+    }
+
+}
